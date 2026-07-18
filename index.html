@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haroon Rasheed - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="terminal">
+        <div class="titlebar">
+            <div></div>
+            <div class="window-title">haroon_rasheed</div>
+            <div class="window-buttons">
+                <div class="window-btn minimize">✕</div>
+                <div class="window-btn fullscreen">_</div>
+                <div class="window-btn close">▢</div>
+            </div>
+        </div>
+        <div class="tabbar">
+            <button class="tab-btn active" data-tab="hello">hello.sh</button>
+            <button class="tab-btn" data-tab="about">about-me</button>
+            <button class="tab-btn" data-tab="education">education</button>
+            <button class="tab-btn" data-tab="experience">experience</button>
+            <button class="tab-btn" data-tab="projects">projects/</button>
+        </div>
+        <div class="contentarea">
+            <div class="pane active" id="pane-hello">
+                <div class="cmdline"><span class="p1">guest@portfolio</span>:<span class="p2">~$</span> whoami</div>
+                <div class="name-title">Haroon Rasheed Ullattuthodiyil</div>
+                <div class="role-line">Cyber Security student</div>
+                <div class="cmdline"><span class="p1">guest@portfolio</span>:<span class="p2">~$</span> cat summary.txt</div>
+                <div class="summary">
+                    <span class="summary-text" data-text="I'm a Cyber security postgraduate with foundational skill in ethical hacking and programming in C and Python. Currently working on learning more and improving my skills."></span><span class="cursor"></span>
+                </div>
+                <a href="resume.pdf" download="resume.pdf">
+                    <button class="resume-btn">resume.pdf</button>
+                </a>
+            </div>
+            <div class="pane ide" id="pane-about">
+                <div class="ide">
+                    <div class="ide-sidebar">
+                        <div class="ide-sidebar-title">SKILLS EXPLORER</div>
+                        <div class="tree-folder">▾ 📁 Programming</div>
+                        <div class="tree-item">Python</div>
+                        <div class="tree-item">C</div>
+                        <div class="tree-item">Java</div>
+                        <div class="tree-item">HTML CSS Javascript</div>
+                        <div class="tree-folder">▾ 📁 Tools & Platforms</div>
+                        <div class="tree-item">Kali Linux</div>
+                        <div class="tree-item">Nmap</div>
+                        <div class="tree-item">Burp Suite</div>
+                        <div class="tree-item">Wireshark</div>
+                    </div>
+                    <div class="ide-editor">
+                        <div class="filename">about-me.py</div>
+                        <div class="code-body" id="about-code"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="pane-education">
+                <div class="cmdline"><span class="p1">guest@portfolio</span>:<span class="p2">~/education$</span> cat timeline.log</div>
+                <div class="timeline">
+                    <div class="timeline-entry">
+                        <div class="entry-bullet"></div>
+                        <div class="entry-meta">2025 - Present</div>
+                        <div class="entry-title">M.Tech in CSE (Cyber Security)</div>
+                        <div class="entry-sub">School of Engineering, CUSAT</div>
+                        <div class="entry-desc">CGPA: 8.15 (Upto 2nd Semester)</div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="entry-bullet"></div>
+                        <div class="entry-meta">2021 - 2025</div>
+                        <div class="entry-title">B.Tech in Computer Science Engineering</div>
+                        <div class="entry-sub">Albertian Institute of Science and Technology</div>
+                        <div class="entry-desc">CGPA: 8.23 (First Class with Distinction)</div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="entry-bullet"></div>
+                        <div class="entry-meta">2020 - 2021</div>
+                        <div class="entry-title">Higher Secondary Education - CBSE</div>
+                        <div class="entry-sub">Campion School, Edapally</div>
+                        <div class="entry-desc">Percentage: 92.2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="pane-experience">
+                <div class="cmdline"><span class="p1">guest@portfolio</span>:<span class="p2">~/experience$</span> history | grep internship</div>
+                <div class="timeline">
+                    <div class="timeline-entry">
+                        <div class="entry-bullet"></div>
+                        <div class="entry-meta">June 2025 (1 month)</div>
+                        <div class="entry-title">Intern</div>
+                        <div class="entry-sub">Department of Computer Science, CUSAT</div>
+                        <div class="entry-desc">Learnt basics of AI, Machine Learning, Deep Learning.</div>
+                        <div class="project-tags">
+                            <div class="project-tag">Machine Learning</div>
+                            <div class="project-tag">Deep Learning</div>
+                            <div class="project-tag">AI</div>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="entry-bullet"></div>
+                        <div class="entry-meta">September 2022</div>
+                        <div class="entry-title">Ethical Hacking Intern</div>
+                        <div class="entry-sub">Zindot Innovations</div>
+                        <div class="entry-desc">Learnt basics of Ethical Hacking.</div>
+                        <div class="project-tags">
+                            <div class="project-tag">Ethical Hacking</div>
+                            <div class="project-tag">Nmap</div>
+                            <div class="project-tag">Wireshark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="pane-projects">
+                <div class="cmdline"><span class="p1">guest@portfolio</span>:<span class="p2">~/projects$</span> ls -la</div>
+                <div class="project-table">
+                    <div class="project-row header-row">
+                        <div class="col-perms">perms</div>
+                        <div class="col-details">project</div>
+                        <div class="col-link">link</div>
+                    </div>
+                    <div class="project-row">
+                        <div class="col-perms">-rwxr-xr-x</div>
+                        <div class="col-details">
+                            <div class="proj-title">Multifunction Gesture Controlled Glove (B.Tech Main Project)</div>
+                            <div class="proj-desc">Developed a gesture-controlled smart glove that functions as a virtual mouse and executes customizable actions.</div>
+                            <div class="project-tags">
+                                <div class="project-tag">Python</div>
+                                <div class="project-tag">ESP32</div>
+                                <div class="project-tag">Arduino IDE</div>
+                            </div>
+                        </div>
+                        <div class="col-link">
+                            <a href="https://github.com/JulienJessmon/Multi-Func-Glove" target="_blank" rel="noopener noreferrer">View →</a>
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div class="col-perms">-rwxr-xr-x</div>
+                        <div class="col-details">
+                            <div class="proj-title">LearnVault - Study Material Repository (B.Tech Mini Project)</div>
+                            <div class="proj-desc">Designed the UI/UX and developed the frontend and backend of a Python-based study material repository</div>
+                            <div class="project-tags">
+                                <div class="project-tag">Python</div>
+                                <div class="project-tag">Firebase</div>
+                                <div class="project-tag">CustomTkinter</div>
+                            </div>
+                        </div>
+                        <div class="col-link">
+                            <a href="https://github.com/JulienJessmon/study-material-repo" target="_blank" rel="noopener noreferrer">View →</a>
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div class="col-perms">-rwxr-xr-x</div>
+                        <div class="col-details">
+                            <div class="proj-title">Password Strength Checker.</div>
+                            <div class="proj-desc">Built a web app to analyze password strength and generate secure passwords in real time. Scores passwords against length, character-variety, and common-password-breach heuristics, and returns instant feedback via a REST API backend.</div>
+                            <div class="project-tags">
+                                <div class="project-tag">Python</div>
+                                <div class="project-tag">Flask</div>
+                                <div class="project-tag">HTML CSS Javascript</div>
+                            </div>
+                        </div>
+                        <div class="col-link">
+                            <a href="https://github.com/HaroonRasheed1903/PasswordStrengthChecker" target="_blank" rel="noopener noreferrer">View →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottombar">
+            <div class="socials">
+                <p class="social title">Find me on:</p>
+                <a class="social" href="https://github.com/HaroonRasheed1903" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="social" href="https://www.linkedin.com/in/haroon-rasheed-ullattuthodiyil-434133221/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="social email" href="mailto:haroon.ut@gmail.com">Email</a>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
